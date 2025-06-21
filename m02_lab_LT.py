@@ -17,11 +17,16 @@ print('***************************************\n')
 WELCOME = ('Welcome!\nThis program will determin whether or not a student has made the Deans List or Honor Roll.\n')
 GOODBYE = ('Thank you for using this program!')
 # Variables
+last_name = ''
+first_name = ''
+gpa = 0.0
 
 
-# Program Logic
+# Program Starts Here
+# Print Welcome Message
 print(WELCOME)
 
+# Main Loop
 while True:
    # Get the student's last name
    last_name = input('Please enter the student\'s last name (or type "zzz" to quit): ')
@@ -45,6 +50,7 @@ while True:
    else:
       status = 'not made Honor Roll'
 
+   # Print the student's status
    print(f'{first_name}{last_name} has a GPA of {gpa:.2f} and has {status}.\n')
 
 # End of Program
